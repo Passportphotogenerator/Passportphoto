@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.6.4.1 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+		pre { background: transparent }
+		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
+		pre.cjk { font-family: "NSimSun", monospace; font-size: 10pt }
+		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre class="western">&lt;html&gt;
+    &lt;head&gt;
+
+      &lt;link rel=&quot;stylesheet&quot; href=&quot;myscript.js&quot; type=&quot;text/Javascript&quot;&gt;
+
+        &lt;style&gt;
+          *
+          {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+          }
+
+          #container
+          {
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: space-between;
+            width:100%;
+          }
+
+          .photo
+          {
+            width:21%;
+            display:flex;
+            justify-content: center;
+            transform: rotateZ(90deg);
+}
+         
+          .photo img
+          {
+            width: 110.5px;
+            height: 144.5px;
+            object-fit: cover;
+          }
+
+          .button
+          {
+            display:flex;
+            justify-content: center;
+          }
+          button
+          {
+            margin-top: 50px;
+            display:flex;
+            justify-content: center;
+            width:70px;
+            background-color: rgb(241, 114, 241);
+            color:white;
+            font-size: 20px;
+            padding:4px;
+            cursor:pointer;
+            transition:0.2s ease;
+            margin-bottom: 10px;
+          }
+
+          button:hover
+          {
+            box-shadow: 2px 3px 5px black;
+          }
+
+          #line1
+          {
+            display:none;
+          }
+
+          #line2
+          {
+            display:none;
+          }
+
+          #line3
+          {
+            display:none;
+          }
+
+          #line4
+          {
+            display:none;
+          }
+
+          #line5
+          {
+            display:none;
+          }
+
+          #line6
+          {
+            display:none;
+          }
+
+          #option
+          {
+            display:flex;
+            justify-content: center;
+          }
+
+          #option button
+          {
+           
+            width:200px;
+          }
+
+          @media print
+          {
+            .button
+            {
+                visibility: hidden;
+            }
+
+            @page
+            {
+                size:A4;
+                margin:18px;
+            }
+          }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div id=&quot;container&quot;&gt;
+
+     &lt;div id=&quot;line1&quot;&gt;      
+
+          &lt;div class=&quot;photo&quot;&gt;
+            &lt;img src=&quot;photo.jpg&quot;&gt;
+          &lt;/div&gt;
+          
+          &lt;div class=&quot;photo&quot;&gt;
+            &lt;img src=&quot;photo.jpg&quot;&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;photo&quot;&gt;
+            &lt;img src=&quot;photo.jpg&quot;&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;photo&quot;&gt;
+            &lt;img src=&quot;photo.jpg&quot;&gt;
+          &lt;/div&gt;
+
+        &lt;/div&gt; 
+
+
+        &lt;div id=&quot;line2&quot;&gt;      
+
+            
+            &lt;div class=&quot;photo&quot;&gt;
+              &lt;img src=&quot;photo.jpg&quot;&gt;
+            &lt;/div&gt;
+  
+            &lt;div class=&quot;photo&quot;&gt;
+              &lt;img src=&quot;photo.jpg&quot;&gt;
+            &lt;/div&gt;
+  
+            &lt;div class=&quot;photo&quot;&gt;
+              &lt;img src=&quot;photo.jpg&quot;&gt;
+            &lt;/div&gt;
+  
+            &lt;div class=&quot;photo&quot;&gt;
+              &lt;img src=&quot;photo.jpg&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+              
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              
+            &lt;/div&gt; 
+  
+           
+
+
+          &lt;div id=&quot;line3&quot;&gt;      
+
+  
+            &lt;div class=&quot;photo&quot;&gt;
+              &lt;img src=&quot;photo.jpg&quot;&gt;
+            &lt;/div&gt;
+  
+            &lt;div class=&quot;photo&quot;&gt;
+              &lt;img src=&quot;photo.jpg&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+              
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+             
+
+            &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+              
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+            &lt;/div&gt; 
+  
+          
+
+
+          &lt;div id=&quot;line4&quot;&gt; 
+            
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+             
+
+            &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+              
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+             
+
+            &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+              
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+             
+
+            &lt;div class=&quot;photo&quot;&gt;
+              &lt;img src=&quot;photo.jpg&quot;&gt;
+            &lt;/div&gt;
+            
+            &lt;div class=&quot;photo&quot;&gt;
+              &lt;img src=&quot;photo.jpg&quot;&gt;
+            &lt;/div&gt;
+  
+            &lt;div class=&quot;photo&quot;&gt;
+              &lt;img src=&quot;photo.jpg&quot;&gt;
+            &lt;/div&gt;
+  
+            &lt;div class=&quot;photo&quot;&gt;
+              &lt;img src=&quot;photo.jpg&quot;&gt;
+            &lt;/div&gt;
+  
+            &lt;div class=&quot;photo&quot;&gt;
+              &lt;img src=&quot;photo.jpg&quot;&gt;
+            &lt;/div&gt;
+  
+          &lt;/div&gt; 
+
+
+          &lt;div id=&quot;line5&quot;&gt;      
+
+
+            &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+              
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+           
+
+            &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+              
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+            
+
+            &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+              
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+            
+            &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+              
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;photo&quot;&gt;
+                &lt;img src=&quot;photo.jpg&quot;&gt;
+              &lt;/div&gt;
+    
+            &lt;/div&gt; 
+
+
+
+            &lt;div id=&quot;line6&quot;&gt;      
+
+
+                &lt;div class=&quot;photo&quot;&gt;
+                    &lt;img src=&quot;photo.jpg&quot;&gt;
+                  &lt;/div&gt;
+                  
+                  &lt;div class=&quot;photo&quot;&gt;
+                    &lt;img src=&quot;photo.jpg&quot;&gt;
+                  &lt;/div&gt;
+        
+                  &lt;div class=&quot;photo&quot;&gt;
+                    &lt;img src=&quot;photo.jpg&quot;&gt;
+                  &lt;/div&gt;
+        
+                  &lt;div class=&quot;photo&quot;&gt;
+                    &lt;img src=&quot;photo.jpg&quot;&gt;
+                  &lt;/div&gt;
+        
+                  &lt;div class=&quot;photo&quot;&gt;
+                    &lt;img src=&quot;photo.jpg&quot;&gt;
+                  &lt;/div&gt;
+        
+               
+    
+                &lt;div class=&quot;photo&quot;&gt;
+                    &lt;img src=&quot;photo.jpg&quot;&gt;
+                  &lt;/div&gt;
+                  
+                  &lt;div class=&quot;photo&quot;&gt;
+                    &lt;img src=&quot;photo.jpg&quot;&gt;
+                  &lt;/div&gt;
+        
+                  &lt;div class=&quot;photo&quot;&gt;
+                    &lt;img src=&quot;photo.jpg&quot;&gt;
+                  &lt;/div&gt;
+        
+                  &lt;div class=&quot;photo&quot;&gt;
+                    &lt;img src=&quot;photo.jpg&quot;&gt;
+                  &lt;/div&gt;
+        
+                  &lt;div class=&quot;photo&quot;&gt;
+                    &lt;img src=&quot;photo.jpg&quot;&gt;
+                  &lt;/div&gt;
+        
+                
+    
+                &lt;div class=&quot;photo&quot;&gt;
+                    &lt;img src=&quot;photo.jpg&quot;&gt;
+                  &lt;/div&gt;
+                  
+                  &lt;div class=&quot;photo&quot;&gt;
+                    &lt;img src=&quot;photo.jpg&quot;&gt;
+                  &lt;/div&gt;
+        
+                  &lt;div class=&quot;photo&quot;&gt;
+                    &lt;img src=&quot;photo.jpg&quot;&gt;
+                  &lt;/div&gt;
+        
+                  &lt;div class=&quot;photo&quot;&gt;
+                    &lt;img src=&quot;photo.jpg&quot;&gt;
+                  &lt;/div&gt;
+        
+                  &lt;div class=&quot;photo&quot;&gt;
+                    &lt;img src=&quot;photo.jpg&quot;&gt;
+                  &lt;/div&gt;
+        
+                
+                &lt;div class=&quot;photo&quot;&gt;
+                    &lt;img src=&quot;photo.jpg&quot;&gt;
+                  &lt;/div&gt;
+                  
+                  &lt;div class=&quot;photo&quot;&gt;
+                    &lt;img src=&quot;photo.jpg&quot;&gt;
+                  &lt;/div&gt;
+        
+                  &lt;div class=&quot;photo&quot;&gt;
+                    &lt;img src=&quot;photo.jpg&quot;&gt;
+                  &lt;/div&gt;
+        
+                  &lt;div class=&quot;photo&quot;&gt;
+                    &lt;img src=&quot;photo.jpg&quot;&gt;
+                  &lt;/div&gt;
+        
+                  &lt;div class=&quot;photo&quot;&gt;
+                    &lt;img src=&quot;photo.jpg&quot;&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class=&quot;photo&quot;&gt;
+                    &lt;img src=&quot;photo.jpg&quot;&gt;
+                  &lt;/div&gt;
+        
+                  &lt;div class=&quot;photo&quot;&gt;
+                    &lt;img src=&quot;photo.jpg&quot;&gt;
+                  &lt;/div&gt;
+        
+                  &lt;div class=&quot;photo&quot;&gt;
+                    &lt;img src=&quot;photo.jpg&quot;&gt;
+                  &lt;/div&gt;
+        
+                  &lt;div class=&quot;photo&quot;&gt;
+                    &lt;img src=&quot;photo.jpg&quot;&gt;
+                  &lt;/div&gt;
+        
+                &lt;/div&gt; 
+  
+          &lt;/div&gt; 
+        
+        
+
+
+
+        
+        &lt;div class=&quot;button&quot;&gt;
+        &lt;button onclick=&quot;window.print()&quot;&gt;Print&lt;/button&gt;
+        &lt;/div&gt;
+        
+
+      
+      &lt;div id=&quot;option&quot;&gt;
+&lt;button onclick=&quot;a1()&quot;&gt;1 (4) photos&lt;/button&gt;
+&lt;button onclick=&quot;a2()&quot;&gt;2 (8) photos&lt;/button&gt;
+&lt;button onclick=&quot;a3()&quot;&gt;3 (12) photos&lt;/button&gt;
+&lt;button onclick=&quot;a4()&quot;&gt;4 (16) photos&lt;/button&gt;
+&lt;button onclick=&quot;a5()&quot;&gt;5 (20) photos&lt;/button&gt;
+&lt;button onclick=&quot;a6()&quot;&gt;6 (24) photos&lt;/button&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;script&gt;
+    function a1()
+    {
+        document.getElementById(&quot;line1&quot;).style.display =&quot;contents&quot; ;
+        document.getElementById(&quot;option&quot;).style.display =&quot;none&quot;;
+    }
+
+    function a2()
+    {
+        document.getElementById(&quot;line2&quot;).style.display =&quot;contents&quot; ;
+        document.getElementById(&quot;option&quot;).style.display =&quot;none&quot;;
+    }
+
+    function a3()
+    {
+        document.getElementById(&quot;line3&quot;).style.display =&quot;contents&quot; ;
+        document.getElementById(&quot;option&quot;).style.display =&quot;none&quot;;
+    }
+
+    function a4()
+    {
+        document.getElementById(&quot;line4&quot;).style.display =&quot;contents&quot; ;
+        document.getElementById(&quot;option&quot;).style.display =&quot;none&quot;;
+    }
+
+    function a5()
+    {
+        document.getElementById(&quot;line5&quot;).style.display =&quot;contents&quot; ;
+        document.getElementById(&quot;option&quot;).style.display =&quot;none&quot;;
+    }
+
+    function a6()
+    {
+        document.getElementById(&quot;line6&quot;).style.display =&quot;contents&quot; ;
+        document.getElementById(&quot;option&quot;).style.display =&quot;none&quot;;
+    }
+&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
+</html>
